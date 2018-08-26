@@ -76,7 +76,7 @@ def sendMessageWithMention(to, mid):
         
 def helpmessage():
     helpMessage = "╔═══════════════" + "\n" + \
-                  "╠♥ ✿✿✿ mr musa ✿✿✿ ♥" + "\n" + \
+                  "╠BY ALISH JOKER" + "\n" + \
                   "║" + "\n" + \
                   "╠══✪〘 Help Message 〙✪══" + "\n" + \
                   "║" + "\n" + \
@@ -151,7 +151,7 @@ def helpmessage():
                   "╠➥ SearchImage「Search」" + "\n" + \
                   "╠➥ ScreenshootWebsite「LinkUrl」" + "\n" + \
                   "║" + "\n" + \
-                  "╚═〘 Credits By: ©MUSA  〙"
+                  "╚═〘 Credits By: ©ALISH  〙"
     return helpMessage
     
 def helptexttospeech():
@@ -322,7 +322,7 @@ def helptranslate():
                        "╠ fil : Filipino" + "\n" + \
                        "╠ he : Hebrew" + "\n" + \
                        "╚══[ Jangan Typo ]" + "\n" + "\n\n" + \
-                         "Contoh : tr-id Nadya Cantik"
+                         "tr:id"
     return helpTranslate
 #==============================================================================#
 def lineBot(op):
@@ -364,7 +364,7 @@ def lineBot(op):
                 if text.lower() == 'help':
                     helpMessage = helpmessage()
                     nadya.sendMessage(to, str(helpMessage))
-                    nadya.sendContact(to, "ua68f1a941b69d423fd3516bbea0cd0b3")
+                    nadya.sendContact(to, "u947fc6ed4cf99f7e377a58704eb5b0f5")
                 elif text.lower() == 'texttospeech':
                     helpTextToSpeech = helptexttospeech()
                     nadya.sendMessage(to, str(helpTextToSpeech))
@@ -390,7 +390,7 @@ def lineBot(op):
                 elif text.lower() == 'about':
                     try:
                         arr = []
-                        owner = "ua68f1a941b69d423fd3516bbea0cd0b3"
+                        owner = "u947fc6ed4cf99f7e377a58704eb5b0f5"
                         creator = nadya.getContact(owner)
                         contact = nadya.getContact(nadyaMID)
                         grouplist = nadya.getGroupIdsJoined()
@@ -670,7 +670,7 @@ def lineBot(op):
                         group = nadya.getGroup(to)
                         if group.preventedJoinByTicket == False:
                             ticket = nadya.reissueGroupTicket(to)
-                            nadya.sendMessage(to, "[ Group Ticket ]\nhttps://nadya.me/R/ti/g/{}".format(str(ticket)))
+                            nadya.sendMessage(to, "[ Group Ticket ]\nhttps://line.me/R/ti/g/{}".format(str(ticket)))
                         else:
                             nadya.sendMessage(to, "Grup qr tidak terbuka silahkan buka terlebih dahulu dengan perintah {}openqr".format(str(settings["keyCommand"])))
                 elif text.lower() == 'groupticket on':
@@ -706,7 +706,7 @@ def lineBot(op):
                         gTicket = "Tidak ada"
                     else:
                         gQr = "Terbuka"
-                        gTicket = "https://nadya.me/R/ti/g/{}".format(str(nadya.reissueGroupTicket(group.id)))
+                        gTicket = "https://line.me/R/ti/g/{}".format(str(nadya.reissueGroupTicket(group.id)))
                     path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
                     ret_ = "╔══[ Group Info ]"
                     ret_ += "\n╠ Nama Group : {}".format(str(group.name))

@@ -26,11 +26,6 @@ Cara Menjalankan Bot Kembali :
 - Ketik -> `python3 Nadyasb.py`
 
 
-Credit By@ mr_musa.
+Credit By@ Alish Joker.
 ------
-- `Follow My Instagram : sms_mo`
-- `Add My ID telegram : t.me/mr_musa`
-
-Thx To :
-------
-- `termuxapp`
+-`
